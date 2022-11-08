@@ -20,6 +20,11 @@ public class menuButtons : MonoBehaviour
         SceneManager.LoadScene("MainMenu");
     }
 
+    public void ranking()
+    {
+        SceneManager.LoadScene("Ranking");
+    }
+
 
     public void exitGame()
     {
