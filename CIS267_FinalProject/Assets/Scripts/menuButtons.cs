@@ -25,6 +25,21 @@ public class menuButtons : MonoBehaviour
         SceneManager.LoadScene("Ranking");
     }
 
+    public void sound()
+    {
+        SceneManager.LoadScene("Sound");
+    }
+
+    public void controls()
+    {
+        SceneManager.LoadScene("Controls");
+    }
+
+    public void levelSelect()
+    {
+        SceneManager.LoadScene("LevelSelect");
+    }
+
 
     public void exitGame()
     {
