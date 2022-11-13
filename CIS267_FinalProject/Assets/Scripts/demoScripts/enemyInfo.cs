@@ -6,6 +6,7 @@ public class enemyInfo : MonoBehaviour
 {
 
     public float health;
+    public int points;
 
     // Start is called before the first frame update
     void Start()
@@ -23,7 +24,11 @@ public class enemyInfo : MonoBehaviour
     {
         if (health <= 0)
         {
+            GameManager.instance.setScore(points);
+            GameManager.instance.removeEnemy();
+
             Destroy(this.gameObject);
+         
         }
     }
 

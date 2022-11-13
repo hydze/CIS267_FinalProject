@@ -10,6 +10,10 @@ public class GameManager : MonoBehaviour
     public int lives;
     public int shipHealth;
     public bool gameOver;
+    public bool isWin;
+
+    private int enemyCount;
+
     //any persistent data between scenes can be saved here
     //ship health, lives, score, game over and booleans
     //settings??
@@ -43,4 +47,90 @@ public class GameManager : MonoBehaviour
     {
         
     }
+
+    public void setScore(int s)
+    {
+        score += s;
+    }
+
+    public int getScore()
+    {
+        return score;
+    }
+
+    public int getHealth()
+    {
+        return shipHealth;
+    }
+
+    public void removeHealth(int d)
+    {
+        shipHealth -= d;
+    }
+
+    public void giveHealth(int h)
+    {
+        shipHealth += h;
+    }
+
+    public void setHealth(int h)
+    {
+        shipHealth = h;
+    }
+
+    public int getLives()
+    {
+        return lives;
+    }
+
+    public void removeLives(int r)
+    {
+        lives -= r;
+    }
+
+    public void giveLives(int l)
+    {
+        lives += l;
+    }
+
+    public void setLives(int l)
+    {
+        lives = l;
+    }
+
+    public void setGameOver()
+    {
+        gameOver = true;
+    }
+
+    public bool getGameOver()
+    {
+        return gameOver;
+    }
+
+    public void setEnemyCount(int e)
+    {
+        enemyCount = e;
+    }
+
+    public void removeEnemy()
+    {
+        enemyCount--;
+    }
+
+    public int getEnemyCount()
+    {
+        return enemyCount;
+    }
+
+    public bool getWin()
+    {
+        return isWin;
+    }  
+    
+    public void setWin()
+    {
+        isWin = true;
+    }
+
 }
