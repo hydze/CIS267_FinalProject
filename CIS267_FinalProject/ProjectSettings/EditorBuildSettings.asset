@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Ranking.unity
     guid: 98a04bdde066d4549a5ab064efbf8e1b
   - enabled: 1
+    path: Assets/Scenes/Cheats.unity
+    guid: 52d2e1bcaea025e49a359e13fc4eec36
+  - enabled: 1
     path: Assets/Scenes/Settings/Settings.unity
     guid: 704314a08fa7ad44fba5652337f2044f
   - enabled: 1
