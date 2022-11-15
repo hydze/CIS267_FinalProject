@@ -5,6 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class menuButtons : MonoBehaviour
 {
+    private void Start()
+    {
+        Time.timeScale = 1f;
+    }
+
     public void startGame()
     {
         SceneManager.LoadScene("DemoScene");

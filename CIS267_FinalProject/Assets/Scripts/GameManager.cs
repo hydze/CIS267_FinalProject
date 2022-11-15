@@ -138,4 +138,8 @@ public class GameManager : MonoBehaviour
         isWin = true;
     }
 
+    public void resetTime()
+    {
+        Time.timeScale = 1f;
+    }
 }

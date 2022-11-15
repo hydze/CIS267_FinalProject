@@ -13,7 +13,7 @@ public class fireWeapon : MonoBehaviour
 
     public float firingRate;
 
-    private bool canFire = true;
+    public bool canFire = true;
 
 
     // Start is called before the first frame update
