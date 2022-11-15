@@ -12,7 +12,7 @@ public class menuButtons : MonoBehaviour
 
     public void cheats()
     {
-        SceneManager.LoadScene("Cheats");
+        SceneManager.LoadScene("LevelSelect");
     }
 
     public void settings()

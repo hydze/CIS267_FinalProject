@@ -16,6 +16,3 @@ public class CheatsButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
         cheatsScreen.SetActive(false);
     }
 }
-
-
-
