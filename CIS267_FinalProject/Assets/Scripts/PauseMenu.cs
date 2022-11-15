@@ -8,6 +8,11 @@ public class PauseMenu : MonoBehaviour
     public static bool isGamePaused = false;
     public GameObject pauseCavas;
 
+    private void Start()
+    {
+        resume();
+    }
+
     // Update is called once per frame
     void Update()
     {
