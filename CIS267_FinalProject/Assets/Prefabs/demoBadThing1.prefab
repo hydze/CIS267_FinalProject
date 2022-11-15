@@ -162,7 +162,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c68c97770877b5642bbe676d548b2ba3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 8076430906212966418, guid: c936ce846c651ef459df6eebc71e9b05, type: 3}
+  projectile: {fileID: 7632280723550913317, guid: 7f065e8c5cb07c84e9f3080cbfdb91e2, type: 3}
   tip: {fileID: 6420897462939979595}
   delay: 4
   rate: 4
