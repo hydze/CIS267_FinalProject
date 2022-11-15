@@ -10,6 +10,11 @@ public class menuButtons : MonoBehaviour
         SceneManager.LoadScene("DemoScene");
     }
 
+    public void cheats()
+    {
+        SceneManager.LoadScene("Cheats");
+    }
+
     public void settings()
     {
         SceneManager.LoadScene("Settings");
