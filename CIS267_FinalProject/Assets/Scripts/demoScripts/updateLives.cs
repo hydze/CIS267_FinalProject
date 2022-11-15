@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class updateLives : MonoBehaviour
 {
@@ -17,5 +18,10 @@ public class updateLives : MonoBehaviour
     void Update()
     {
         livesText.SetText(GameManager.instance.getLives().ToString() + " : Lives");
+
+        if(GameManager.instance.getLives() == 0)
+        {
+            SceneManager.LoadScene("GameOver");
+        }
     }
 }

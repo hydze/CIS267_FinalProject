@@ -21,7 +21,10 @@ public class updateHealth : MonoBehaviour
 
         if(GameManager.instance.getHealth() <= 0)
         {
-            SceneManager.LoadScene("GameOver");
+            GameManager.instance.removeLives(1);
+            //SHIP EXPLODE+RESPAWN HERE
+            GameManager.instance.setHealth(100);
+
         }
     }
 }

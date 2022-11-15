@@ -58,6 +58,14 @@ public class GameManager : MonoBehaviour
         score = 0;
     }
 
+    public void resetPlayerVars()
+    {
+        //we might want to change these or set them to vars we can adjust elsewhere
+        score = 0;
+        lives = 3;
+        shipHealth = 100;
+    }
+
     public int getScore()
     {
         return score;

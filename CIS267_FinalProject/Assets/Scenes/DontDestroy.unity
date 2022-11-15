@@ -153,9 +153,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 0
-  lives: 0
-  shipHealth: 0
+  lives: 3
+  shipHealth: 100
   gameOver: 0
+  isWin: 0
 --- !u!4 &499362343
 Transform:
   m_ObjectHideFlags: 0

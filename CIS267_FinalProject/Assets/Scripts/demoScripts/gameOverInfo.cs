@@ -23,8 +23,8 @@ public class gameOverInfo : MonoBehaviour
 
         saveHighScores();
 
-        ///GAME OVER!!! RESET STATIC HIGH SCORE HERE 
-        GameManager.instance.resetScore();
+        ///GAME OVER!!! RESET STATIC VARS HERE INCASE PLAYER PLAYS AGAIN OR WHATEVER
+        GameManager.instance.resetPlayerVars();
     }
 
     // Update is called once per frame
