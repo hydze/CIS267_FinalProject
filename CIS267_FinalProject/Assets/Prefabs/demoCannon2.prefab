@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 7087147322717296189}
   - component: {fileID: 4407642489124533190}
   m_Layer: 0
-  m_Name: demoCannon
+  m_Name: demoCannon2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -106,7 +106,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: 21300000, guid: 7e9a0691717cea44eb077f978636c48a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7d406d73435c5fc4a8955b6a588c7ed0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -129,7 +129,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66610571c010e144e8e86e44b84a3cf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 9070903422859324947, guid: c6bee0e483aaf334b8ad530eaf2371d1, type: 3}
+  projectile: {fileID: 9070903422859324947, guid: 481cd1c1dee4ebe4393137aebaca77ab, type: 3}
   tip: {fileID: 2055871732172786913}
-  firingRate: 0.5
+  firingRate: 0.1
   canFire: 1
