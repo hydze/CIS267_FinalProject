@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-//using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -16,14 +15,10 @@ public class enemySpawner : MonoBehaviour
 
     private int enemyCount;
 
-    private Scene currentScene;
-
     // Start is called before the first frame update
     void Start()
     {
-        currentScene = SceneManager.GetActiveScene();
-
-        GameManager.instance.setEnemyCount(spawnSpotsWave1.Length);
+       GameManager.instance.setEnemyCount(spawnSpotsWave1.Length);
 
         for (int i = spawnSpotsWave1.Length - 1; i >= 0; i--)
         {
@@ -57,21 +52,9 @@ public class enemySpawner : MonoBehaviour
         }
         if(GameManager.instance.getEnemyCount() <= 0 && waveCount <= 0) //we cleared the level
         {
-            if(currentScene.name == "Level1" )
-            {
-                SceneManager.LoadScene("Level2");
-            }
-            else if(currentScene.name == "Level2")
-            {
-                SceneManager.LoadScene("Level3");
-            }
-            else if(currentScene.name == "Level3")
-            {
-                GameManager.instance.setGameOver();
-                GameManager.instance.setWin();
-                SceneManager.LoadScene("GameOver"); //should load next level or win screen at end of last level or whatever when we add them
-            }
-            
+            GameManager.instance.setGameOver();
+            GameManager.instance.setWin();
+            SceneManager.LoadScene("GameOver"); //should load next level or win screen at end of last level or whatever when we add them
         }
     }
 

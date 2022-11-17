@@ -12,7 +12,7 @@ public class menuButtons : MonoBehaviour
 
     public void startGame()
     {
-        SceneManager.LoadScene("Level1");
+        SceneManager.LoadScene("DemoScene");
     }
 
     public void cheats()
@@ -50,27 +50,9 @@ public class menuButtons : MonoBehaviour
         SceneManager.LoadScene("LevelSelect");
     }
 
-    public void selectLevel1()
-    {
-        SceneManager.LoadScene("Level1");
-    }
-
-    public void selectLevel2()
-    {
-        SceneManager.LoadScene("Level2");
-    }
-
-    public void selectLevel3()
-    {
-        SceneManager.LoadScene("Level3");
-    }
-
-
 
     public void exitGame()
     {
         Application.Quit();
     }
-
-
 }

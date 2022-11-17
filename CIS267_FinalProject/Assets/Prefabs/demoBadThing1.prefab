@@ -167,7 +167,6 @@ MonoBehaviour:
   tip: {fileID: 6420897462939979595}
   delay: 4
   rate: 4
-  fuzz: 2
 --- !u!95 &-961561225350150387
 Animator:
   serializedVersion: 4
