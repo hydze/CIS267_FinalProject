@@ -9,11 +9,13 @@ public class enemyShoot : MonoBehaviour
 
     public int delay;
     public int rate;
+    public int fuzz;
     
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("shootWeapon", delay, rate);
+        float fuzzTime = Random.Range(0.0f, fuzz);
+        InvokeRepeating("shootWeapon", delay + fuzzTime, rate + fuzzTime);
     }
 
     // Update is called once per frame

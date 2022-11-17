@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Ranking.unity
     guid: 98a04bdde066d4549a5ab064efbf8e1b
   - enabled: 0
-    path: Assets/Scenes/Cheats.unity
+    path: 
     guid: 52d2e1bcaea025e49a359e13fc4eec36
   - enabled: 1
     path: Assets/Scenes/Settings/Settings.unity
@@ -32,4 +32,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameOver.unity
     guid: 977d815dc922f8d4b88d4898df772946
+  - enabled: 1
+    path: Assets/Scenes/Levels/Level2.unity
+    guid: 92cf951cf70c3674ca2f35d2c436cd09
+  - enabled: 1
+    path: Assets/Scenes/Levels/Level3.unity
+    guid: 7f1e955af728e334eb5308243c96c73b
+  - enabled: 1
+    path: Assets/Scenes/Levels/Level1.unity
+    guid: d710ebd66eb950b438412caf5b944416
   m_configObjects: {}

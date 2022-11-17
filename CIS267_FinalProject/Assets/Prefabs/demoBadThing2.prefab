@@ -187,6 +187,7 @@ MonoBehaviour:
   tip: {fileID: 2325084858744491119}
   delay: 5
   rate: 4
+  fuzz: 4
 --- !u!1 &5947570869451261812
 GameObject:
   m_ObjectHideFlags: 0
