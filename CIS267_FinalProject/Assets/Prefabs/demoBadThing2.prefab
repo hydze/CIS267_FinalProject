@@ -151,6 +151,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 2
   points: 2
+  powerUps: []
+  chance: 0
+  hasPowerUps: 0
+  explosionPrefab: {fileID: 5376455531186091334, guid: 99d2dd9857c98634c88e34e7b6c6fd20, type: 3}
 --- !u!95 &3655495737601985059
 Animator:
   serializedVersion: 4

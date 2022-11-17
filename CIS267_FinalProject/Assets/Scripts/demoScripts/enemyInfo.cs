@@ -13,6 +13,8 @@ public class enemyInfo : MonoBehaviour
 
     public bool hasPowerUps;
 
+    public GameObject explosionPrefab;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -40,7 +42,7 @@ public class enemyInfo : MonoBehaviour
 
             GameManager.instance.setScore(points);
             GameManager.instance.removeEnemy();
-
+            Instantiate(explosionPrefab, transform.position, Quaternion.identity);
             Destroy(this.gameObject);
          
         }
