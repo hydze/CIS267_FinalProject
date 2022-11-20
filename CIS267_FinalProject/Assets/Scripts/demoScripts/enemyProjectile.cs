@@ -12,6 +12,10 @@ public class enemyProjectile : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if(GameManager.instance.getHalfSpeed())
+        {
+            projectileSpeed = projectileSpeed / 2;
+        }
         Invoke("destroyProjectile", projectileTTL);
     }
 

@@ -11,8 +11,6 @@ public class enemyInfo : MonoBehaviour
     public GameObject[] powerUps;
     public int chance;
 
-    public bool hasPowerUps;
-
     public GameObject explosionPrefab;
 
     // Start is called before the first frame update
@@ -31,14 +29,15 @@ public class enemyInfo : MonoBehaviour
     {
         if (health <= 0)
         {
-            if(Random.Range(0, chance) == 0) //we roll for powerup here
+            if (Random.Range(0, chance) == 0) //we roll for powerup here
             {
-                if (powerUps.Length > 0)
-                {
-                    int randPow = Random.Range(0, powerUps.Length); //we choose here
-                    Instantiate(powerUps[randPow], new Vector2(transform.position.x, transform.position.y), Quaternion.identity);
-                }
+                 if (powerUps.Length > 0)
+                 {
+                        int randPow = Random.Range(0, powerUps.Length); //we choose here
+                        Instantiate(powerUps[randPow], new Vector2(transform.position.x, transform.position.y), Quaternion.identity);
+                 }
             }
+
 
             GameManager.instance.setScore(points);
             GameManager.instance.removeEnemy();

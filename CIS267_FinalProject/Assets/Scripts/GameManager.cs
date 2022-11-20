@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     public bool isWin;
 
     private int enemyCount;
+    private bool halfSpeedProjectiles = false;
 
     //any persistent data between scenes can be saved here
     //ship health, lives, score, game over and booleans
@@ -150,4 +151,20 @@ public class GameManager : MonoBehaviour
     {
         Time.timeScale = 1f;
     }
+
+    public void halfSpeed()
+    {
+        halfSpeedProjectiles = true;
+    }
+
+    public void fullSpeed()
+    {
+        halfSpeedProjectiles = false;
+    }
+
+    public bool getHalfSpeed()
+    {
+        return halfSpeedProjectiles;
+    }
+
 }

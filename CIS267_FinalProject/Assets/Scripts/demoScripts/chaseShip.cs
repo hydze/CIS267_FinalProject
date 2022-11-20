@@ -10,9 +10,10 @@ public class chaseShip : MonoBehaviour
     private Rigidbody2D enemyRB;
     private Vector2 movement;
 
-    public float moveSpeed;
-    public float maxDistance;
-    public float minDistance;
+    public float ramDamage;
+    public float moveSpeed = 3;
+
+    public GameObject explosionPrefab;
 
     public float delay;
     private float time;
@@ -25,8 +26,7 @@ public class chaseShip : MonoBehaviour
     void Start()
     {
         enemyRB = GetComponent<Rigidbody2D>();
-        Vector3 dir = ship.position - transform.position;
-
+        ship = GameObject.FindWithTag("Ship").transform; 
         delay += Random.Range(0.0f, fuzz);
         
     }
@@ -34,6 +34,7 @@ public class chaseShip : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         time = time + 1f * Time.deltaTime;
         if(started == false)
         {
@@ -61,10 +62,25 @@ public class chaseShip : MonoBehaviour
     {
         Vector3 dir = ship.position - transform.position;
         float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+        float realSpeed = moveSpeed;
         enemyRB.rotation = angle;
         dir.Normalize();
-        enemyRB.MovePosition(transform.position + (dir * moveSpeed * Time.deltaTime));
+        if (GameManager.instance.getHalfSpeed())
+        {
+            realSpeed = moveSpeed / 3;
+        }
+        enemyRB.MovePosition(transform.position + (dir * realSpeed * Time.deltaTime));
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Ship"))
+        {
+            GameManager.instance.removeEnemy();
+            GameManager.instance.removeHealth((int)ramDamage);
+            Instantiate(explosionPrefab, transform.position, Quaternion.identity);
+            Destroy(this.gameObject);
+        }
+    }
 
 }

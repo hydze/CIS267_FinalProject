@@ -8,6 +8,8 @@ TagManager:
   - enemyProjectile
   - Ship
   - weap2
+  - weap1
+  - L2Clock
   layers:
   - Default
   - TransparentFX
