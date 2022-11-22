@@ -1,38 +1,70 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class HomingProjectile : MonoBehaviour
 {
-    private Transform target;
+    private Transform ship;
     private Rigidbody2D rb;
-    public float speed;
+    public GameObject explosion;
+    public float moveSpeed;
     public float rotateSpeed;
+
+    public int damageAmt;
+    public float delay;
+    private float time;
+    private bool started = false;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        setTarget();
+        ship = GameObject.FindWithTag("Ship").transform;
+
+    }
+    void Update()
+    {
+        time = time + 1f * Time.deltaTime;
+        if (started == false)
+        {
+            if (time > delay)
+            {
+                started = true;
+            }
+        }
+        else
+        {
+            rb.gravityScale = 18f;
+            followShip();
+        }
+
     }
 
-    private void FixedUpdate()
+    void followShip()
     {
-        Vector2 direction = (Vector2)target.position - rb.position;
-
-        direction.Normalize();
-
-        float rotateAmt = Vector3.Cross(direction, transform.up).z;
-
-        rb.angularVelocity = -rotateAmt * rotateSpeed;
-
-        rb.velocity = transform.up * speed;
+        Vector3 dir = ship.position - transform.position;
+        float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+        float realSpeed = moveSpeed;
+        rb.rotation = angle;
+        dir.Normalize();
+        if (GameManager.instance.getHalfSpeed())
+        {
+            realSpeed = moveSpeed / 3;
+        }
+        rb.MovePosition(transform.position + (dir * realSpeed * Time.deltaTime));
     }
 
-    void setTarget()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        target = GameManager.instance.getTarget_l3();
+        if (collision.gameObject.CompareTag("Ship"))
+        {
+            GameManager.instance.removeEnemy();
+            GameManager.instance.removeHealth((int)damageAmt);
+            Instantiate(explosion, transform.position, Quaternion.identity);
+            Destroy(this.gameObject);
+        }
     }
 }
  

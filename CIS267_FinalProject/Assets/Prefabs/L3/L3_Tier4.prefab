@@ -203,6 +203,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectile: {fileID: 208802051444820501, guid: e61357fda99370345902a1b575466504, type: 3}
   tip: {fileID: 7863505384493632414}
-  delay: 4
+  delay: 6
   rate: 4
   fuzz: 2

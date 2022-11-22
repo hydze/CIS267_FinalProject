@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 208802051444820498}
   - component: {fileID: 208802051444820499}
   - component: {fileID: 208802051444820500}
-  - component: {fileID: 208802051444820497}
   - component: {fileID: 208802051444820496}
   - component: {fileID: 4014984087833954333}
   - component: {fileID: 6270836402340606685}
@@ -81,7 +80,7 @@ SpriteRenderer:
   m_Sprite: {fileID: 21300000, guid: be03153d5cad6bd4790659e0e070cefd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
-  m_FlipY: 0
+  m_FlipY: 1
   m_DrawMode: 0
   m_Size: {x: 4, y: 4}
   m_AdaptiveModeThreshold: 0.5
@@ -109,21 +108,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &208802051444820497
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 208802051444820501}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e7625d4957ac1f45bcb4b2b62d5fa6a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  projectileDamage: 25
-  projectileSpeed: 1
-  projectileTTL: 10
 --- !u!61 &208802051444820496
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -162,8 +146,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48196b28e0b46ae4ab6c2f87982b00fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  explosion: {fileID: 5376455531186091334, guid: 99d2dd9857c98634c88e34e7b6c6fd20, type: 3}
+  moveSpeed: 3
   rotateSpeed: 30
+  damageAmt: 25
+  delay: 1
 --- !u!50 &6270836402340606685
 Rigidbody2D:
   serializedVersion: 4
@@ -179,9 +166,9 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0
-  m_GravityScale: 1
+  m_GravityScale: 0.4
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
