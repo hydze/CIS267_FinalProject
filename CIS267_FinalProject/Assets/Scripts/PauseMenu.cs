@@ -35,7 +35,7 @@ public class PauseMenu : MonoBehaviour
 
     public void resume()
     {
-        FindObjectOfType<fireWeapon>().canFire = true;
+        //FindObjectOfType<fireWeapon>().canFire = true;
         pauseCavas.SetActive(false);
         Time.timeScale = 1f;
         isGamePaused = false;
@@ -43,7 +43,7 @@ public class PauseMenu : MonoBehaviour
 
     public void pause()
     {
-        FindObjectOfType<fireWeapon>().canFire = false;
+        //FindObjectOfType<fireWeapon>().canFire = false;
         pauseCavas.SetActive(true);
         Time.timeScale = 0f;
         isGamePaused = true;

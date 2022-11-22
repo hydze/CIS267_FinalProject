@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     public bool isWin;
 
     private int enemyCount;
+    private bool level3_speedPowerup = false;
     private bool halfSpeedProjectiles = false;
 
     //any persistent data between scenes can be saved here
@@ -165,6 +166,21 @@ public class GameManager : MonoBehaviour
     public bool getHalfSpeed()
     {
         return halfSpeedProjectiles;
+    }
+
+    public void speedPowerup()
+    {
+        level3_speedPowerup = true;
+    }
+
+    public void speedPowerupRevert()
+    {
+        level3_speedPowerup = false;
+    }
+
+    public bool getSpeedPowerup()
+    {
+        return level3_speedPowerup;
     }
 
 }

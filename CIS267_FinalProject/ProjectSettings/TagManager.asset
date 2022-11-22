@@ -10,6 +10,8 @@ TagManager:
   - weap2
   - weap1
   - L2Clock
+  - L3Speed
+  - Border
   layers:
   - Default
   - TransparentFX
