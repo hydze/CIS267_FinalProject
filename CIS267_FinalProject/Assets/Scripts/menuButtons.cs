@@ -7,7 +7,13 @@ public class menuButtons : MonoBehaviour
 {
     private void Start()
     {
-        Time.timeScale = 1f;
+        Scene scene = SceneManager.GetActiveScene();
+
+        if(scene.name == "MainMenu" || scene.name == "GameOver" || scene.name == "Ranking" )
+        {
+            Time.timeScale = 1f;
+        }
+        
     }
 
     public void startGame()
