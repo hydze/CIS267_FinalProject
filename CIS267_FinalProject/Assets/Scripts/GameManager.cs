@@ -16,6 +16,8 @@ public class GameManager : MonoBehaviour
     private bool level3_speedPowerup = false;
     private bool halfSpeedProjectiles = false;
 
+    public Transform l3_target;
+
     //any persistent data between scenes can be saved here
     //ship health, lives, score, game over and booleans
     //settings??
@@ -181,6 +183,11 @@ public class GameManager : MonoBehaviour
     public bool getSpeedPowerup()
     {
         return level3_speedPowerup;
+    }
+
+    public Transform getTarget_l3()
+    {
+        return l3_target;
     }
 
 }
