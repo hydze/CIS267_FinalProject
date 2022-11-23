@@ -1,7 +1,7 @@
 //using System;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Experimental.GraphView;
+//using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class chaseShip : MonoBehaviour
@@ -21,6 +21,12 @@ public class chaseShip : MonoBehaviour
 
     private bool started = false;
 
+    public AudioSource source;
+    public AudioClip powOn;
+
+    public AudioClip pop0;
+    public AudioClip pop1;
+    public AudioClip pop2;
 
     // Start is called before the first frame update
     void Start()
@@ -40,6 +46,7 @@ public class chaseShip : MonoBehaviour
         {
             if(time > delay)
             {
+                source.PlayOneShot(powOn);
                 started = true;
             }
         }
@@ -76,10 +83,28 @@ public class chaseShip : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Ship"))
         {
+            int pop = Random.Range(0, 3);
             GameManager.instance.removeEnemy();
             GameManager.instance.removeHealth((int)ramDamage);
+            
+            gameObject.GetComponentInChildren<SpriteRenderer>().enabled = false;
+            gameObject.GetComponent<Collider2D>().enabled = false;
+
+            if (pop == 0)
+            {
+                source.PlayOneShot(pop0);
+            }
+            else if(pop == 1)
+            {
+                source.PlayOneShot(pop1);
+            }
+            else if(pop == 2)
+            {
+                source.PlayOneShot(pop2);
+            }
+
             Instantiate(explosionPrefab, transform.position, Quaternion.identity);
-            Destroy(this.gameObject);
+            Destroy(this.gameObject, 0.6f);
         }
     }
 

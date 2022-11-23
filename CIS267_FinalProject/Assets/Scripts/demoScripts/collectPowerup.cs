@@ -6,13 +6,16 @@ using UnityEngine;
 
 public class collectPowerup : MonoBehaviour
 {
+    private AudioSource theShip;
+    public AudioClip slowDown;
+
     private float time;
     public float slowPowTime = 10;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        theShip = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -36,6 +39,7 @@ public class collectPowerup : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("L2Clock"))
         {
+            theShip.PlayOneShot(slowDown);
             GameManager.instance.halfSpeed();
             Destroy(collision.gameObject);
         }

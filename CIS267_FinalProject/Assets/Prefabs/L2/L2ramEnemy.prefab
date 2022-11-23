@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5234979741285076370}
   m_Layer: 0
   m_Name: enim
-  m_TagString: Untagged
+  m_TagString: L2Ram
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -97,6 +97,7 @@ GameObject:
   - component: {fileID: 5234979741901573921}
   - component: {fileID: 5234979741901573925}
   - component: {fileID: 5234979741901573926}
+  - component: {fileID: 9085581173535371665}
   m_Layer: 0
   m_Name: L2ramEnemy
   m_TagString: Enemy
@@ -155,12 +156,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ship: {fileID: 0}
   ramDamage: 33
-  moveSpeed: 3
-  maxDistance: 2
-  minDistance: 0
+  moveSpeed: 4.5
   explosionPrefab: {fileID: 5376455531186091334, guid: 99d2dd9857c98634c88e34e7b6c6fd20, type: 3}
-  delay: 7
-  fuzz: 4
+  delay: 5
+  fuzz: 7
+  source: {fileID: 9085581173535371665}
+  powOn: {fileID: 8300000, guid: a4ded682fd351c7469742070478b2537, type: 3}
+  pop0: {fileID: 8300000, guid: 073de360799d0d641aa01ef578aef66a, type: 3}
+  pop1: {fileID: 8300000, guid: 4c7c745850fc8394f9fa935efc4f7fe4, type: 3}
+  pop2: {fileID: 8300000, guid: b598c1fdbfff55444841b23754e7f363, type: 3}
 --- !u!60 &5234979741901573925
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -203,7 +207,103 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 2
   points: 777
-  powerUps: []
-  chance: 0
-  hasPowerUps: 0
+  powerUps:
+  - {fileID: 4268390223711793736, guid: a88cbac9b7601af4b82db546060a7816, type: 3}
+  chance: 6
   explosionPrefab: {fileID: 5376455531186091334, guid: 99d2dd9857c98634c88e34e7b6c6fd20, type: 3}
+--- !u!82 &9085581173535371665
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5234979741901573920}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
