@@ -42,9 +42,9 @@ GameObject:
   - component: {fileID: 2022116566850219492}
   - component: {fileID: 2022116566850219491}
   - component: {fileID: 2022116566850219490}
-  - component: {fileID: 266987520028865172}
   - component: {fileID: 2693144795937648630}
   - component: {fileID: 2022116566850219503}
+  - component: {fileID: 605964501413521699}
   m_Layer: 0
   m_Name: L3_Tier4
   m_TagString: Enemy
@@ -141,36 +141,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!68 &266987520028865172
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2022116566850219502}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: -2.22223, y: -1.944392}
-  - {x: -1.7321707, y: -0.65038735}
-  - {x: -0.59426725, y: 1.8814607}
-  - {x: -0.27172577, y: 2.296607}
-  - {x: 0.32913265, y: 2.303618}
-  - {x: 0.6242494, y: 1.9237403}
-  - {x: 2.1794903, y: -1.8809267}
-  - {x: 0.41331697, y: -2.3298383}
-  - {x: -0.440588, y: -2.3776617}
-  - {x: -2.222095, y: -1.9657588}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
 --- !u!114 &2693144795937648630
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -205,4 +175,36 @@ MonoBehaviour:
   tip: {fileID: 7863505384493632414}
   delay: 6
   rate: 4
-  fuzz: 2
+  fuzz: 5
+--- !u!68 &605964501413521699
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2022116566850219502}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -1.7739722, y: 0.7537983}
+  - {x: -2.212677, y: 1.9969051}
+  - {x: -0.4628275, y: 2.3508377}
+  - {x: 0.539718, y: 2.3600705}
+  - {x: 2.221901, y: 1.9044603}
+  - {x: 1.6998938, y: 0.7140549}
+  - {x: 0.6039765, y: -1.8992193}
+  - {x: 0.27137935, y: -2.2428951}
+  - {x: -0.24803138, y: -2.2648652}
+  - {x: -0.66518295, y: -1.8333}
+  - {x: -1.7298713, y: 0.69667244}
+  - {x: -1.7728492, y: 0.7802477}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0

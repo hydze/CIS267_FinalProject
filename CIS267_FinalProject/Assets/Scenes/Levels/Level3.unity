@@ -3831,6 +3831,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 727c36029ac02ed45820d1aea3aec3bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  slowDown: {fileID: 0}
   slowPowTime: 10
 --- !u!4 &1550682602 stripped
 Transform:
@@ -9368,7 +9369,7 @@ MonoBehaviour:
   - {fileID: 665244230}
   - {fileID: 1618111753}
   enemyListWave1:
-  - {fileID: 3606338968946085181, guid: 9eb174e5c4df0294ea89a53a8ced9ce6, type: 3}
+  - {fileID: 2533645514039515396, guid: c033175c436d0244a863f44b407efa86, type: 3}
   - {fileID: 3606338968946085181, guid: 4ba19d257b78252459b4b6160df10ef7, type: 3}
   - {fileID: 2022116566850219502, guid: 38079a691a709384d8c47983430e5b1f, type: 3}
   spawnSpotsWave2:
