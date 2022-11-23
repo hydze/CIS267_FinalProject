@@ -18,13 +18,6 @@ public class updateHealth : MonoBehaviour
     void Update()
     {
         hpText.SetText(GameManager.instance.getHealth().ToString() + " : HP");
-
-        if(GameManager.instance.getHealth() <= 0)
-        {
-            GameManager.instance.removeLives(1);
-            //SHIP EXPLODE+RESPAWN HERE
-            GameManager.instance.setHealth(100);
-
-        }
+  
     }
 }

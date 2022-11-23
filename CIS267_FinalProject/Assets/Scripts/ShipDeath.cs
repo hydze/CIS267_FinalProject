@@ -24,7 +24,9 @@ public class ShipDeath : MonoBehaviour
         if (GameManager.instance.getHealth() <= 0)
         {
             Instantiate(explosionPrefab, transform.position, Quaternion.identity);
-            Invoke("respawnDelay", 1f);
+            Invoke("respawnDelay", .5f);
+            GameManager.instance.removeLives(1); //moved this stuff here since the explosion/respawn wasnt always being picked up doing this all in 2 scripts
+            GameManager.instance.setHealth(100);
         }
     }
 

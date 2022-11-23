@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class chaseShip : MonoBehaviour
 {
-    public Transform ship;
+    private Transform ship;
     private Rigidbody2D enemyRB;
     private Vector2 movement;
 
