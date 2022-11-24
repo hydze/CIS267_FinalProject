@@ -198,6 +198,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   respawnPoint: {fileID: 0}
   explosionPrefab: {fileID: 5376455531186091334, guid: 99d2dd9857c98634c88e34e7b6c6fd20, type: 3}
+  shipBoom: {fileID: 8300000, guid: 6b92659dbc1d7384ba3877bcadcef816, type: 3}
 --- !u!95 &-7909010467766123993
 Animator:
   serializedVersion: 4

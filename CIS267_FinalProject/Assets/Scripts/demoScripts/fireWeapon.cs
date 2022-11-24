@@ -5,6 +5,9 @@ using UnityEngine;
 public class fireWeapon : MonoBehaviour
 {
 
+    private AudioSource theShip;
+    public AudioClip weapSound;
+
     public GameObject projectile;
 
     public Transform tip;
@@ -19,7 +22,7 @@ public class fireWeapon : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        theShip = GameObject.FindWithTag("Ship").GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -42,6 +45,10 @@ public class fireWeapon : MonoBehaviour
             if (canFire)
             {
                 shootWeapon();
+                if(weapSound != null && theShip != null)
+                {
+                    theShip.PlayOneShot(weapSound);
+                }
                 canFire = false;
             }
         }

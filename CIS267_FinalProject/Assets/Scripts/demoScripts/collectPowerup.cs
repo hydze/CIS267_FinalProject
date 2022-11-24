@@ -9,6 +9,7 @@ public class collectPowerup : MonoBehaviour
     private AudioSource theShip;
     public AudioClip slowDown;
 
+
     private float time;
     public float slowPowTime = 10;
 
@@ -41,6 +42,12 @@ public class collectPowerup : MonoBehaviour
         {
             theShip.PlayOneShot(slowDown);
             GameManager.instance.halfSpeed();
+            Destroy(collision.gameObject);
+        }
+        if (collision.gameObject.CompareTag("L2Shield"))
+        {
+            GameManager.instance.setInvuln();
+            GameManager.instance.setShield();
             Destroy(collision.gameObject);
         }
     }

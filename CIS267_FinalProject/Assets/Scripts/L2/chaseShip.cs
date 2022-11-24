@@ -85,8 +85,12 @@ public class chaseShip : MonoBehaviour
         {
             int pop = Random.Range(0, 3);
             GameManager.instance.removeEnemy();
-            GameManager.instance.removeHealth((int)ramDamage);
-            
+
+            if (GameManager.instance.getVuln())
+            {
+                GameManager.instance.removeHealth((int)ramDamage);
+            }
+
             gameObject.GetComponentInChildren<SpriteRenderer>().enabled = false;
             gameObject.GetComponent<Collider2D>().enabled = false;
 

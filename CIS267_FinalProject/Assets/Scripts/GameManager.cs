@@ -11,6 +11,8 @@ public class GameManager : MonoBehaviour
     public int shipHealth;
     public bool gameOver;
     public bool isWin;
+    public bool isVuln = true;
+    public bool shield = false;
 
     private int enemyCount;
     private bool level3_speedPowerup = false;
@@ -25,11 +27,16 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         load();
+        setVuln();
+        stopShield();
     }
 
     private void load()
     {
-        if(instance != null)
+        setVuln();
+        stopShield();
+
+        if (instance != null)
         {
             Destroy(gameObject);
         }
@@ -43,7 +50,8 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        setVuln();
+        stopShield();
     }
 
     // Update is called once per frame
@@ -188,6 +196,36 @@ public class GameManager : MonoBehaviour
     public Transform getTarget_l3()
     {
         return l3_target;
+    }
+
+    public bool getVuln()
+    {
+        return isVuln;
+    }
+
+    public void setInvuln()
+    {
+        isVuln = false;
+    }
+
+    public void setVuln()
+    {
+        isVuln = true;
+    }
+
+    public bool getShield()
+    {
+        return shield;
+    }
+
+    public void setShield()
+    {
+        shield = true;
+    }
+
+    public void stopShield()
+    {
+        shield = false;
     }
 
 }

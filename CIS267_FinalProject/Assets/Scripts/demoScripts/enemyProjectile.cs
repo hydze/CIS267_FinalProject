@@ -29,7 +29,10 @@ public class enemyProjectile : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Ship"))
         {
-            GameManager.instance.removeHealth((int)projectileDamage);
+            if (GameManager.instance.getVuln())
+            {
+                GameManager.instance.removeHealth((int)projectileDamage);
+            }
             destroyProjectile();
         }
     }

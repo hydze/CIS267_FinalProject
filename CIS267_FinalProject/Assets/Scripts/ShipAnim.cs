@@ -6,10 +6,15 @@ public class ShipAnim : MonoBehaviour
 {
     private Animator anim;
 
+    private AudioSource theShip;
+    public AudioClip[] shipHit;
+
     // Start is called before the first frame update
     void Start()
     {
         anim = GetComponent<Animator>();
+        theShip = GetComponent<AudioSource>();
+
     }
 
     // Update is called once per frame
@@ -22,8 +27,17 @@ public class ShipAnim : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("enemyProjectile") || collision.gameObject.CompareTag("Enemy"))
         {
-            anim.SetBool("damageBlink", true);
-            Invoke("stopBlink", 1f);
+            if (GameManager.instance.getVuln())
+            {
+                if(shipHit.Length > 0)
+                {
+                    int randObj = Random.Range(0, shipHit.Length);
+                    theShip.PlayOneShot(shipHit[randObj]);
+                }
+
+                anim.SetBool("damageBlink", true);
+                Invoke("stopBlink", 1f);
+            }
         }
     }
 

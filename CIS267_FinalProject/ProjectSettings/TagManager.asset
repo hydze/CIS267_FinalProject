@@ -12,6 +12,10 @@ TagManager:
   - L2Clock
   - L3Speed
   - Border
+  - L2Ram
+  - L2Shield
+  - L2ShieldOn
+  - L2Spawns1
   layers:
   - Default
   - TransparentFX
