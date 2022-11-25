@@ -1509,7 +1509,7 @@ Transform:
   - {fileID: 1522131024}
   - {fileID: 2004189978}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!199 &433294122
 ParticleSystemRenderer:
@@ -8251,7 +8251,7 @@ PrefabInstance:
       objectReference: {fileID: 1675144977}
     - target: {fileID: 2147893493110343996, guid: 34dd44328690b6b45b21262bd977617d, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2147893493110343996, guid: 34dd44328690b6b45b21262bd977617d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8368,7 +8368,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2147893493110343996, guid: 9e434979b809bac4ca72380961b1001d, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2147893493110343996, guid: 9e434979b809bac4ca72380961b1001d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9020,9 +9020,9 @@ MonoBehaviour:
   - {fileID: 2065941638}
   - {fileID: 1800991418}
   enemyListWave1:
+  - {fileID: 3606338968946085181, guid: 19b9d0551f8fa1e4995204a62877d45c, type: 3}
   - {fileID: 3606338968946085181, guid: bc5372a390cd3ec41a2a2749259b5963, type: 3}
-  - {fileID: 3606338968946085181, guid: b7389b22eb5cf474ba3a9ad7678baa31, type: 3}
-  - {fileID: 3606338968946085181, guid: 068c52f0712b9bb48890b9febad7ba18, type: 3}
+  - {fileID: 3606338968946085181, guid: 19b9d0551f8fa1e4995204a62877d45c, type: 3}
   spawnSpotsWave2:
   - {fileID: 1265012527}
   - {fileID: 273912787}
@@ -14213,7 +14213,7 @@ RectTransform:
   m_Children:
   - {fileID: 26510707}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
