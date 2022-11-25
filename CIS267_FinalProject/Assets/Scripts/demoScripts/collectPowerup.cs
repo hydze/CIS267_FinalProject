@@ -8,10 +8,10 @@ public class collectPowerup : MonoBehaviour
 {
     private AudioSource theShip;
     public AudioClip slowDown;
-
+    public AudioClip speedUp;
 
     private float time;
-    public float slowPowTime = 10;
+    public float slowPowTime = 5;
 
     // Start is called before the first frame update
     void Start()
@@ -30,7 +30,8 @@ public class collectPowerup : MonoBehaviour
             if (time > slowPowTime)
             {
                time = 0f;
-               GameManager.instance.fullSpeed();       
+               GameManager.instance.fullSpeed();
+               theShip.PlayOneShot(speedUp);
             }
 
         }

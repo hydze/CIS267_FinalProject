@@ -192,11 +192,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c68c97770877b5642bbe676d548b2ba3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 8705972507856053296, guid: f4552358c0e5d604885479833067d8d6, type: 3}
+  projectile: {fileID: 3770411402501261796, guid: 4dda782095f8fcb4bad1c368597d97dc, type: 3}
   tip: {fileID: 2325084858744491119}
   delay: 5
   rate: 4
-  fuzz: 4
+  fuzz: 10
 --- !u!114 &4989968284253537797
 MonoBehaviour:
   m_ObjectHideFlags: 0
