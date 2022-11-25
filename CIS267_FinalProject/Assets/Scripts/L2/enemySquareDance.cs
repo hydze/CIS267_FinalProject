@@ -16,7 +16,7 @@ public class enemySquareDance : MonoBehaviour
     private float moveTime;
 
     public int fuzz;
-    private bool started = true;
+    private bool started = false;
     private float realSpeed;
 
     // Start is called before the first frame update
