@@ -18,11 +18,13 @@ public class fireWeapon : MonoBehaviour
 
     public bool canFire = true;
 
+    private screenShake mainCamera;
 
     // Start is called before the first frame update
     void Start()
     {
         theShip = GameObject.FindWithTag("Ship").GetComponent<AudioSource>();
+        mainCamera = GameObject.FindWithTag("MainCamera").GetComponent<screenShake>();
     }
 
     // Update is called once per frame
@@ -57,6 +59,11 @@ public class fireWeapon : MonoBehaviour
 
     void shootWeapon()
     {
+        if(mainCamera != null)
+        {
+            mainCamera.makeShake();
+
+        }
         Instantiate(projectile, tip.position, transform.rotation);
     }
 
