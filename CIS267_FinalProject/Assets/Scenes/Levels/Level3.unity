@@ -1855,7 +1855,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -429.2, y: 5.399994}
+  m_AnchoredPosition: {x: -429.2, y: 5.3999634}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &641660611
@@ -3832,6 +3832,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slowDown: {fileID: 0}
+  speedUp: {fileID: 0}
   slowPowTime: 10
 --- !u!4 &1550682602 stripped
 Transform:
@@ -9867,6 +9868,8 @@ MonoBehaviour:
   shipHealth: 100
   gameOver: 0
   isWin: 0
+  isVuln: 1
+  shield: 0
   l3_target: {fileID: 1550682602}
 --- !u!4 &2079746411
 Transform:

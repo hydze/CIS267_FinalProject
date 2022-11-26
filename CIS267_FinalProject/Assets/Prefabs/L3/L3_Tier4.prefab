@@ -45,6 +45,7 @@ GameObject:
   - component: {fileID: 2693144795937648630}
   - component: {fileID: 2022116566850219503}
   - component: {fileID: 605964501413521699}
+  - component: {fileID: -1474246024335318881}
   m_Layer: 0
   m_Name: L3_Tier4
   m_TagString: Enemy
@@ -173,8 +174,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectile: {fileID: 208802051444820501, guid: e61357fda99370345902a1b575466504, type: 3}
   tip: {fileID: 7863505384493632414}
-  delay: 6
-  rate: 4
+  delay: 5
+  rate: 5
   fuzz: 5
 --- !u!68 &605964501413521699
 EdgeCollider2D:
@@ -208,3 +209,17 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
+--- !u!114 &-1474246024335318881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2022116566850219502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aaeb0640e63f19843be1ceb03f9d9d06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 20
+  rotationModifier: 270

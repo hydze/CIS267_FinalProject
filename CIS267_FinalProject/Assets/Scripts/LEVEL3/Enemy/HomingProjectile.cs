@@ -24,7 +24,7 @@ public class HomingProjectile : MonoBehaviour
         ship = GameObject.FindWithTag("Ship").transform;
 
     }
-    void Update()
+    void FixedUpdate()
     {
         time = time + 1f * Time.deltaTime;
         if (started == false)
@@ -40,6 +40,13 @@ public class HomingProjectile : MonoBehaviour
             followShip();
         }
 
+    }
+
+    public void aimAtShip()
+    {
+        Vector3 dir = ship.position - transform.position;
+        float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+        rb.rotation = angle;
     }
 
     void followShip()
