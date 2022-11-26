@@ -3821,6 +3821,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: multiWeapon
       objectReference: {fileID: 0}
+    - target: {fileID: 5245283095811719075, guid: 34dd44328690b6b45b21262bd977617d, type: 3}
+      propertyPath: myWeapons.Array.data[0]
+      value: 
+      objectReference: {fileID: 4098939518300006546, guid: 53c232a7a2c771a4f917491459560255, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 34dd44328690b6b45b21262bd977617d, type: 3}
 --- !u!1 &1550682591 stripped
