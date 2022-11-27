@@ -10,6 +10,7 @@ public class enableShield : MonoBehaviour
     private GameObject shield;
 
     private bool shieldLock = false;
+    public float shieldTime = 5;
 
     // Start is called before the first frame update
     void Start()
@@ -17,6 +18,7 @@ public class enableShield : MonoBehaviour
         GameManager.instance.stopShield();
         theShip = GetComponent<AudioSource>();
         shield = GameObject.FindWithTag("L2ShieldOn");
+
     }
 
     // Update is called once per frame
@@ -26,7 +28,7 @@ public class enableShield : MonoBehaviour
         {
             theShip.PlayOneShot(shieldSound);
             shield.GetComponent<SpriteRenderer>().enabled = true;
-            Invoke("stopShield", 10);
+            Invoke("stopShield", shieldTime);
             shieldLock = true;
         }
     }

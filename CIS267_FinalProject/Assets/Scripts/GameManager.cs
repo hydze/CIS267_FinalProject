@@ -20,6 +20,9 @@ public class GameManager : MonoBehaviour
 
     public Transform l3_target;
 
+    private bool paused = false;
+    private float volume = 1.0f;
+
     //any persistent data between scenes can be saved here
     //ship health, lives, score, game over and booleans
     //settings??
@@ -228,4 +231,30 @@ public class GameManager : MonoBehaviour
         shield = false;
     }
 
+    public float getVol()
+    {
+        return volume;
+    }
+
+    public void setVol(float v)
+    {
+        volume = v;
+    }
+
+    public bool getPaused()
+    {
+        return paused;
+    }
+
+    public void togglePaused()
+    {
+        if(paused == true)
+        {
+            paused = false;
+        }
+        else
+        {
+            paused = true;
+        }
+    }
 }

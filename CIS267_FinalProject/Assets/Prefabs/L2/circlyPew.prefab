@@ -348,7 +348,6 @@ GameObject:
   - component: {fileID: 220577905848076241}
   - component: {fileID: 220577905848076240}
   - component: {fileID: 220577905848076255}
-  - component: {fileID: 568077550752598669}
   m_Layer: 0
   m_Name: circlyPew
   m_TagString: enemyProjectile
@@ -465,22 +464,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!58 &568077550752598669
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 220577905848076254}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.5
 --- !u!1 &220577906118417738
 GameObject:
   m_ObjectHideFlags: 0

@@ -28,11 +28,14 @@ public class chaseShip : MonoBehaviour
     public AudioClip pop1;
     public AudioClip pop2;
 
+    private Animator animator;
+
     // Start is called before the first frame update
     void Start()
     {
         enemyRB = GetComponent<Rigidbody2D>();
-        ship = GameObject.FindWithTag("Ship").transform; 
+        ship = GameObject.FindWithTag("Ship").transform;
+        animator = GetComponentInChildren<Animator>();
         delay += Random.Range(0.0f, fuzz);
         
     }
@@ -40,6 +43,7 @@ public class chaseShip : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        int trigger = Random.Range(0, 200);
 
         time = time + 1f * Time.deltaTime;
         if(started == false)
@@ -48,10 +52,18 @@ public class chaseShip : MonoBehaviour
             {
                 source.PlayOneShot(powOn);
                 started = true;
+                if (animator != null)
+                {
+                    animator.SetTrigger("Wake"); //wake up/look around 
+                }
             }
         }
         else
         {
+            if (animator != null && trigger > 199)
+            {
+                animator.SetTrigger("Wake"); //look around/reaquire target 
+            }
             followShip();
         }
 
@@ -77,6 +89,7 @@ public class chaseShip : MonoBehaviour
             realSpeed = moveSpeed / 3;
         }
         enemyRB.MovePosition(transform.position + (dir * realSpeed * Time.deltaTime));
+        
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

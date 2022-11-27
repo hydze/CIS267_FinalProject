@@ -48,7 +48,7 @@ public class fireWeapon : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetButton("Fire1") || Input.GetButton("Fire2") || Input.GetButton("Fire3")) //probably a cleaner way to do gamepad shoot
         {
-            if (canFire)
+            if (canFire && !GameManager.instance.getPaused())
             {
                 int rand = Random.Range(1, 4);
                 shootWeapon();
