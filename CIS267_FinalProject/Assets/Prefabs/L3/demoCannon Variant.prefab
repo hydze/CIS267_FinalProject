@@ -56,9 +56,25 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4407642489124533190, guid: 89dcd6e5fb8c43847976c774727b4506, type: 3}
+      propertyPath: weapSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 5ad4685a1c7bf234c898cf0e4a28e2dc, type: 3}
+    - target: {fileID: 4407642489124533190, guid: 89dcd6e5fb8c43847976c774727b4506, type: 3}
+      propertyPath: firingRate
+      value: 0.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 4407642489124533190, guid: 89dcd6e5fb8c43847976c774727b4506, type: 3}
       propertyPath: projectile
       value: 
       objectReference: {fileID: 6413245415407666494, guid: 9a98c295446a7f44dbe2d6a07dfcbe72, type: 3}
+    - target: {fileID: 4407642489124533190, guid: 89dcd6e5fb8c43847976c774727b4506, type: 3}
+      propertyPath: weapSound2
+      value: 
+      objectReference: {fileID: 8300000, guid: ad713ddbbcf0f244d9f8112859113474, type: 3}
+    - target: {fileID: 4407642489124533190, guid: 89dcd6e5fb8c43847976c774727b4506, type: 3}
+      propertyPath: weapSound3
+      value: 
+      objectReference: {fileID: 8300000, guid: 67ef8afe2e86c9949b54179a277ae5cf, type: 3}
     - target: {fileID: 6344368946655514067, guid: 89dcd6e5fb8c43847976c774727b4506, type: 3}
       propertyPath: m_Name
       value: demoCannon Variant

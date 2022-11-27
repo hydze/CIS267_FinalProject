@@ -156,9 +156,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 20
   points: 50
+  hitSounds:
+  - {fileID: 8300000, guid: 99a3c62bd2ffe6b42bff6965beb1fe9b, type: 3}
+  - {fileID: 8300000, guid: 1041a38a6ee0c8748bf1629890769964, type: 3}
+  - {fileID: 8300000, guid: c581fc02c273f5b4a81188fe17cc269c, type: 3}
   powerUps:
   - {fileID: 9093909035700671013, guid: 67aca60ce27ce9e4cb4615bd16f6c75a, type: 3}
-  chance: 0
+  chance: 6
   explosionPrefab: {fileID: 4730589077851697390, guid: c14002020da8e3443a5417b23e38af6c, type: 3}
 --- !u!114 &2022116566850219503
 MonoBehaviour:
@@ -174,9 +178,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectile: {fileID: 208802051444820501, guid: e61357fda99370345902a1b575466504, type: 3}
   tip: {fileID: 7863505384493632414}
-  delay: 5
+  delay: 3
   rate: 5
-  fuzz: 5
+  fuzz: 3
 --- !u!68 &605964501413521699
 EdgeCollider2D:
   m_ObjectHideFlags: 0

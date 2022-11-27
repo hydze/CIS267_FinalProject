@@ -15,6 +15,30 @@ PrefabInstance:
       propertyPath: delay
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 3606338968946085122, guid: 5b1cc65236e0b7e4da2058f6fa60b082, type: 3}
+      propertyPath: chance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3606338968946085122, guid: 5b1cc65236e0b7e4da2058f6fa60b082, type: 3}
+      propertyPath: health
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 3606338968946085122, guid: 5b1cc65236e0b7e4da2058f6fa60b082, type: 3}
+      propertyPath: hitSounds.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3606338968946085122, guid: 5b1cc65236e0b7e4da2058f6fa60b082, type: 3}
+      propertyPath: hitSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 99a3c62bd2ffe6b42bff6965beb1fe9b, type: 3}
+    - target: {fileID: 3606338968946085122, guid: 5b1cc65236e0b7e4da2058f6fa60b082, type: 3}
+      propertyPath: hitSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 1041a38a6ee0c8748bf1629890769964, type: 3}
+    - target: {fileID: 3606338968946085122, guid: 5b1cc65236e0b7e4da2058f6fa60b082, type: 3}
+      propertyPath: hitSounds.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: c581fc02c273f5b4a81188fe17cc269c, type: 3}
     - target: {fileID: 3606338968946085126, guid: 5b1cc65236e0b7e4da2058f6fa60b082, type: 3}
       propertyPath: m_RootOrder
       value: 0

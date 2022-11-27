@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class enemyInfo : MonoBehaviour
 {
-
     public float health;
     public int points;
+
+    private AudioSource theShip;
+    public AudioClip[] hitSounds;
 
     public GameObject[] powerUps;
     public int chance;
@@ -16,7 +19,7 @@ public class enemyInfo : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        theShip = GameObject.FindWithTag("Ship").GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -50,5 +53,15 @@ public class enemyInfo : MonoBehaviour
     public void deductHealth(float damage)
     {
         health -= damage;
+        playSfx();
+    }
+
+    void playSfx()
+    {
+        if (hitSounds.Length > 0)
+        {
+            int randObj = Random.Range(0, hitSounds.Length);
+            theShip.PlayOneShot(hitSounds[randObj]);
+        }
     }
 }

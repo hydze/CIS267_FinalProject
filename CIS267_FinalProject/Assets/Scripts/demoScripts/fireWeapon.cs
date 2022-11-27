@@ -1,12 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class fireWeapon : MonoBehaviour
 {
 
     private AudioSource theShip;
+
     public AudioClip weapSound;
+    public AudioClip weapSound2;
+    public AudioClip weapSound3;
 
     public GameObject projectile;
 
@@ -46,10 +50,28 @@ public class fireWeapon : MonoBehaviour
         {
             if (canFire)
             {
+                int rand = Random.Range(1, 4);
                 shootWeapon();
                 if(weapSound != null && theShip != null)
                 {
-                    theShip.PlayOneShot(weapSound);
+                    if(SceneManager.GetActiveScene().name == "Level3")
+                    {
+                        if(rand == 1)
+                        {
+                            theShip.PlayOneShot(weapSound);
+                        } else if(rand == 2)
+                        {
+                            theShip.PlayOneShot(weapSound2);
+                        }
+                        else
+                        {
+                            theShip.PlayOneShot(weapSound3);
+                        }
+                    }
+                    else
+                    {
+                        theShip.PlayOneShot(weapSound);
+                    }
                 }
                 canFire = false;
             }
@@ -62,7 +84,6 @@ public class fireWeapon : MonoBehaviour
         if(mainCamera != null)
         {
             mainCamera.makeShake();
-
         }
         Instantiate(projectile, tip.position, transform.rotation);
     }

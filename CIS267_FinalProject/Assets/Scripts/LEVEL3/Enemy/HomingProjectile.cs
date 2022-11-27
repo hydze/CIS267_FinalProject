@@ -67,7 +67,6 @@ public class HomingProjectile : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Ship"))
         {
-            GameManager.instance.removeEnemy();
             GameManager.instance.removeHealth((int)damageAmt);
             Instantiate(explosion, transform.position, Quaternion.identity);
             Destroy(this.gameObject);
