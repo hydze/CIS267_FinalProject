@@ -96,7 +96,7 @@ public class chaseShip : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Ship"))
         {
-            int pop = Random.Range(0, 3);
+            
             GameManager.instance.removeEnemy();
 
             if (GameManager.instance.getVuln())
@@ -104,25 +104,40 @@ public class chaseShip : MonoBehaviour
                 GameManager.instance.removeHealth((int)ramDamage);
             }
 
-            gameObject.GetComponentInChildren<SpriteRenderer>().enabled = false;
+            //gameObject.GetComponentInChildren<SpriteRenderer>().enabled = false;
             gameObject.GetComponent<Collider2D>().enabled = false;
 
-            if (pop == 0)
+            if (animator != null)
             {
-                source.PlayOneShot(pop0);
-            }
-            else if(pop == 1)
-            {
-                source.PlayOneShot(pop1);
-            }
-            else if(pop == 2)
-            {
-                source.PlayOneShot(pop2);
+                animator.Play("death"); //buh bye
             }
 
-            Instantiate(explosionPrefab, transform.position, Quaternion.identity);
-            Destroy(this.gameObject, 0.6f);
+
+
+            Invoke("explode", .4f);
+            Destroy(this.gameObject, .6f);
         }
+    }
+
+    public void explode()
+    {
+        int pop = Random.Range(0, 3);
+
+        if (pop == 0)
+        {
+            source.PlayOneShot(pop0);
+        }
+        else if (pop == 1)
+        {
+            source.PlayOneShot(pop1);
+        }
+        else if (pop == 2)
+        {
+            source.PlayOneShot(pop2);
+        }
+
+        //gameObject.GetComponentInChildren<SpriteRenderer>().enabled = false;
+        Instantiate(explosionPrefab, transform.position, Quaternion.identity);
     }
 
 }
