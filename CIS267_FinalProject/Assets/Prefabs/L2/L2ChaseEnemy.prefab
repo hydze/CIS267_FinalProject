@@ -186,8 +186,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a776537ee9de68c41a13604aaf77fd82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ramDamage: 33
-  moveSpeed: 3
+  ramDamage: 20
+  moveSpeed: 1
   explosionPrefab: {fileID: 5376455531186091334, guid: 99d2dd9857c98634c88e34e7b6c6fd20, type: 3}
   delay: 5
   fuzz: 10
@@ -236,13 +236,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 007168eed56abac4da370cb38f425292, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 2
-  points: 777
+  health: 0.5
+  points: 7
   hitSounds: []
   powerUps:
   - {fileID: 4268390223711793736, guid: a88cbac9b7601af4b82db546060a7816, type: 3}
   - {fileID: 2832694639155658094, guid: 786c6d33b06759d48b726ce90fca604f, type: 3}
-  chance: 5
+  chance: 4
   explosionPrefab: {fileID: 5376455531186091334, guid: 99d2dd9857c98634c88e34e7b6c6fd20, type: 3}
 --- !u!82 &9085581173535371665
 AudioSource:

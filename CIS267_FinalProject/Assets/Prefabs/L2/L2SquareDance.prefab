@@ -151,7 +151,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 2
-  points: 2
+  points: 5
+  hitSounds: []
   powerUps:
   - {fileID: 4268390223711793736, guid: a88cbac9b7601af4b82db546060a7816, type: 3}
   - {fileID: 2832694639155658094, guid: 786c6d33b06759d48b726ce90fca604f, type: 3}

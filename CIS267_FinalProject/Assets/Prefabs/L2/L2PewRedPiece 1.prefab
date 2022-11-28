@@ -502,7 +502,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectileDamage: 1
-  projectileSpeed: 6
+  projectileSpeed: 10
   projectileTTL: 5
 --- !u!50 &-7291409653284575890
 Rigidbody2D:
