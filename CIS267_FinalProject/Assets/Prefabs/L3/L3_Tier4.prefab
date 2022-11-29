@@ -158,7 +158,7 @@ MonoBehaviour:
   points: 50
   hitSounds:
   - {fileID: 8300000, guid: 99a3c62bd2ffe6b42bff6965beb1fe9b, type: 3}
-  - {fileID: 8300000, guid: 1041a38a6ee0c8748bf1629890769964, type: 3}
+  - {fileID: 8300000, guid: 946f02688554a3242b1251475a9c7efc, type: 3}
   - {fileID: 8300000, guid: c581fc02c273f5b4a81188fe17cc269c, type: 3}
   powerUps:
   - {fileID: 9093909035700671013, guid: 67aca60ce27ce9e4cb4615bd16f6c75a, type: 3}

@@ -34,11 +34,27 @@ PrefabInstance:
     - target: {fileID: 3606338968946085122, guid: 5b1cc65236e0b7e4da2058f6fa60b082, type: 3}
       propertyPath: hitSounds.Array.data[1]
       value: 
-      objectReference: {fileID: 8300000, guid: 1041a38a6ee0c8748bf1629890769964, type: 3}
+      objectReference: {fileID: 8300000, guid: 946f02688554a3242b1251475a9c7efc, type: 3}
     - target: {fileID: 3606338968946085122, guid: 5b1cc65236e0b7e4da2058f6fa60b082, type: 3}
       propertyPath: hitSounds.Array.data[2]
       value: 
       objectReference: {fileID: 8300000, guid: c581fc02c273f5b4a81188fe17cc269c, type: 3}
+    - target: {fileID: 3606338968946085123, guid: 5b1cc65236e0b7e4da2058f6fa60b082, type: 3}
+      propertyPath: m_Size.x
+      value: 1.1224478
+      objectReference: {fileID: 0}
+    - target: {fileID: 3606338968946085123, guid: 5b1cc65236e0b7e4da2058f6fa60b082, type: 3}
+      propertyPath: m_Size.y
+      value: 0.9230327
+      objectReference: {fileID: 0}
+    - target: {fileID: 3606338968946085123, guid: 5b1cc65236e0b7e4da2058f6fa60b082, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.0017491579
+      objectReference: {fileID: 0}
+    - target: {fileID: 3606338968946085123, guid: 5b1cc65236e0b7e4da2058f6fa60b082, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.03848365
+      objectReference: {fileID: 0}
     - target: {fileID: 3606338968946085126, guid: 5b1cc65236e0b7e4da2058f6fa60b082, type: 3}
       propertyPath: m_RootOrder
       value: 0

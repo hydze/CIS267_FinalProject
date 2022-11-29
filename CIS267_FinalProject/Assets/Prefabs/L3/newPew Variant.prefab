@@ -85,11 +85,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4918805586690898765, guid: c6bee0e483aaf334b8ad530eaf2371d1, type: 3}
       propertyPath: projectileSpeed
-      value: 4.3
+      value: 6.5
       objectReference: {fileID: 0}
     - target: {fileID: 4918805586690898765, guid: c6bee0e483aaf334b8ad530eaf2371d1, type: 3}
       propertyPath: projectileDamage
-      value: 2
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 9070903422859324947, guid: c6bee0e483aaf334b8ad530eaf2371d1, type: 3}
       propertyPath: m_Name
