@@ -61,7 +61,7 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: 7b8e2b616b2083840b6d22efcda0b782, type: 3}
     - target: {fileID: 4407642489124533190, guid: a3a2184117b87dc42937744cbafe3294, type: 3}
       propertyPath: firingRate
-      value: 0.5
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 4407642489124533190, guid: a3a2184117b87dc42937744cbafe3294, type: 3}
       propertyPath: projectile
@@ -79,5 +79,37 @@ PrefabInstance:
       propertyPath: m_Name
       value: demoCannon2 Variant
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4407642489124533190, guid: a3a2184117b87dc42937744cbafe3294, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a3a2184117b87dc42937744cbafe3294, type: 3}
+--- !u!4 &437212820956126916 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2055871732172786913, guid: a3a2184117b87dc42937744cbafe3294, type: 3}
+  m_PrefabInstance: {fileID: 1915902087397052965}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4800027125821267958 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6344368946655514067, guid: a3a2184117b87dc42937744cbafe3294, type: 3}
+  m_PrefabInstance: {fileID: 1915902087397052965}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1146691121623079851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4800027125821267958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a020f61e351ce124888bb6f4e0993175, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weapSound: {fileID: 8300000, guid: 7b8e2b616b2083840b6d22efcda0b782, type: 3}
+  weapSound2: {fileID: 8300000, guid: 7b8e2b616b2083840b6d22efcda0b782, type: 3}
+  weapSound3: {fileID: 8300000, guid: 7b8e2b616b2083840b6d22efcda0b782, type: 3}
+  weaponTooHot: {fileID: 8300000, guid: 7e361c34aed7b0244863d31b151512c3, type: 3}
+  weaponResetting: {fileID: 8300000, guid: 6c5d5788b6ad8a94bbaefdca6ea6111d, type: 3}
+  projectile: {fileID: 1759145953415244019, guid: 2ff0dd3e9a7123e4eb0e86f46117579e, type: 3}
+  tip: {fileID: 437212820956126916}
+  firingRate: 0.02
+  canFire: 1

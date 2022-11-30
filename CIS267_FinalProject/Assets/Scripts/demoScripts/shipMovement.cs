@@ -34,12 +34,10 @@ public class shipMovement : MonoBehaviour
         }
     }
 
-
     private void FixedUpdate()
     {
         moveShip();
     }
-
 
     void moveShip()
     {
@@ -52,12 +50,13 @@ public class shipMovement : MonoBehaviour
 
     void l3_speedSet()
     {
-        moveSpeed = 8f;
+        moveSpeed = moveSpeed * 2f;
+        SpeedThrusters.instance.setThrusterActive();
     }
 
     void l3_speedRevert()
     {
         moveSpeed = tempMoveSpeed;
+        SpeedThrusters.instance.setThrusterInactive();
     }
-
 }

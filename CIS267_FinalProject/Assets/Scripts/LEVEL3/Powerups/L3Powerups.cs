@@ -15,11 +15,4 @@ public class L3Powerups : MonoBehaviour
             isLevel3 = true;
         }
     }
-
-
-
-
-
-
-
 }
