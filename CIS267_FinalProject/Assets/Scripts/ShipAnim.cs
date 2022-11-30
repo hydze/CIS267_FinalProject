@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ShipAnim : MonoBehaviour
 {
@@ -17,19 +18,34 @@ public class ShipAnim : MonoBehaviour
 
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("enemyProjectile") || collision.gameObject.CompareTag("Enemy"))
+        if(SceneManager.GetActiveScene().name == "Level3")
+        {
+            if(!ShieldPowerup.instance.isShieldActive())
+            {
+                if (collision.gameObject.CompareTag("enemyProjectile") || collision.gameObject.CompareTag("Enemy"))
+                {
+                    if (GameManager.instance.getVuln())
+                    {
+                        if (shipHit.Length > 0)
+                        {
+                            int randObj = Random.Range(0, shipHit.Length);
+                            theShip.PlayOneShot(shipHit[randObj]);
+                        }
+
+                        anim.SetBool("damageBlink", true);
+                        Invoke("stopBlink", 1f);
+                    }
+                }
+            }
+        }
+
+        else if (collision.gameObject.CompareTag("enemyProjectile") || collision.gameObject.CompareTag("Enemy"))
         {
             if (GameManager.instance.getVuln())
             {
-                if(shipHit.Length > 0)
+                if (shipHit.Length > 0)
                 {
                     int randObj = Random.Range(0, shipHit.Length);
                     theShip.PlayOneShot(shipHit[randObj]);

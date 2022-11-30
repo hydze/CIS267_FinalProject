@@ -27,7 +27,13 @@ public class enemyProjectile : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Ship"))
+        if (collision.gameObject.CompareTag("l3Shield"))
+        {
+            ShieldItself.instance.hitShield();
+            destroyProjectile();
+        }
+
+        else if (collision.gameObject.CompareTag("Ship"))
         {
             if (GameManager.instance.getVuln())
             {

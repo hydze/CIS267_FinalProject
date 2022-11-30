@@ -155,8 +155,9 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 99a3c62bd2ffe6b42bff6965beb1fe9b, type: 3}
   - {fileID: 8300000, guid: 946f02688554a3242b1251475a9c7efc, type: 3}
   - {fileID: 8300000, guid: c581fc02c273f5b4a81188fe17cc269c, type: 3}
-  powerUps: []
-  chance: 0
+  powerUps:
+  - {fileID: 5307111858668271570, guid: 0c2af4ea445c13d439c29c5f36513829, type: 3}
+  chance: 1
   explosionPrefab: {fileID: 5376455531186091334, guid: 99d2dd9857c98634c88e34e7b6c6fd20, type: 3}
 --- !u!95 &3540066714296599110
 Animator:

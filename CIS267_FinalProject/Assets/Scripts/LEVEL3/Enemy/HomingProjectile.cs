@@ -65,7 +65,12 @@ public class HomingProjectile : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Ship"))
+        if (collision.gameObject.CompareTag("l3Shield"))
+        {
+            ShieldItself.instance.hitShield();
+            Destroy(this.gameObject);
+        }
+        else if (collision.gameObject.CompareTag("Ship"))
         {
             GameManager.instance.removeHealth((int)damageAmt);
             Instantiate(explosion, transform.position, Quaternion.identity);
