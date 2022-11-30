@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
     private bool level3_speedPowerup = false;
     private bool halfSpeedProjectiles = false;
     private bool minimize = false;
+    private bool attackUp = false;
 
     public Transform l3_target;
 
@@ -245,6 +246,21 @@ public class GameManager : MonoBehaviour
     public bool isMinimized()
     {
         return minimize;
+    }
+
+    public void attackIncrease()
+    {
+        attackUp = true;
+    }
+
+    public void attackNormal()
+    {
+        attackUp = false;
+    }
+
+    public bool isAttackUp()
+    {
+        return attackUp;
     }
 
     public float getVol()

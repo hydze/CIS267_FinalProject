@@ -26,12 +26,31 @@ public class PowerUpCollector : MonoBehaviour
                 gameObject.transform.localScale = new Vector3(1f, 1f, 0);
             }
         }
+
+        if (GameManager.instance.isAttackUp())
+        {
+            time = time + 1f * Time.deltaTime;
+
+            if (time > powerUpTimer)
+            {
+                time = 0f;
+                GameManager.instance.attackNormal();
+            }
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        //ship mini sized
         if (collision.gameObject.CompareTag("Mini"))
         {
+            Destroy(collision.gameObject);
+        }
+
+        //ENEMY attack up + 5 :)
+        if (collision.gameObject.CompareTag("Attack"))
+        {
+            GameManager.instance.attackIncrease();
             Destroy(collision.gameObject);
         }
     }

@@ -176,6 +176,7 @@ MonoBehaviour:
   - {fileID: 4963693212949691332, guid: 5db22888b3754784ba013d34dd5e2b18, type: 3}
   - {fileID: 4963693212949691332, guid: f58da553db48f6e4daba3f7e5af6ceef, type: 3}
   - {fileID: 7313211559380195282, guid: 78e5bfae51ab67042a29b00cefd783f9, type: 3}
+  - {fileID: 2460695277601338127, guid: b422cd30e5a2fe549b5e00f4ffc8313c, type: 3}
   chance: 14
   explosionPrefab: {fileID: 5376455531186091334, guid: 99d2dd9857c98634c88e34e7b6c6fd20, type: 3}
 --- !u!114 &5214961440351869652

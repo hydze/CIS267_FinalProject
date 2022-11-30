@@ -31,6 +31,10 @@ public class enemyProjectile : MonoBehaviour
         {
             if (GameManager.instance.getVuln())
             {
+                if(GameManager.instance.isAttackUp())
+                {
+                    projectileDamage = projectileDamage + 5;
+                }
                 GameManager.instance.removeHealth((int)projectileDamage);
             }
             destroyProjectile();
