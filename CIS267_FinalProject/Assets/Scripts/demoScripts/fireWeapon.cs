@@ -8,9 +8,7 @@ public class fireWeapon : MonoBehaviour
 
     private AudioSource theShip;
 
-    public AudioClip weapSound;
-    public AudioClip weapSound2;
-    public AudioClip weapSound3;
+    public AudioClip[] weapSound;
 
     public GameObject projectile;
 
@@ -52,29 +50,19 @@ public class fireWeapon : MonoBehaviour
             {
                 int rand = Random.Range(1, 4);
                 shootWeapon();
-                if(weapSound != null && theShip != null)
+                if (weapSound != null && theShip != null)
                 {
-                    if(SceneManager.GetActiveScene().name == "Level3")
+                    if (SceneManager.GetActiveScene().name == "Level3")
                     {
-                        if(rand == 1)
+                        if (weapSound.Length > 0)
                         {
-                            theShip.PlayOneShot(weapSound);
-                        } else if(rand == 2)
-                        {
-                            theShip.PlayOneShot(weapSound2);
-                        }
-                        else
-                        {
-                            theShip.PlayOneShot(weapSound3);
-                        }
-                    }
-                    else
-                    {
-                        theShip.PlayOneShot(weapSound);
+                            int randObj = Random.Range(0, weapSound.Length);
+                            theShip.PlayOneShot(weapSound[randObj]);
+                        }                      
                     }
                 }
-                canFire = false;
             }
+            canFire = false;
         }
 
     }

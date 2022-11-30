@@ -57,7 +57,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4918805586690898765, guid: 481cd1c1dee4ebe4393137aebaca77ab, type: 3}
       propertyPath: projectileSpeed
-      value: 3.8
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4918805586690898765, guid: 481cd1c1dee4ebe4393137aebaca77ab, type: 3}
       propertyPath: projectileDamage
@@ -65,7 +65,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9070903422859324947, guid: 481cd1c1dee4ebe4393137aebaca77ab, type: 3}
       propertyPath: m_Name
-      value: demoPew2
+      value: demoPew2 Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 481cd1c1dee4ebe4393137aebaca77ab, type: 3}

@@ -129,6 +129,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66610571c010e144e8e86e44b84a3cf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weapSound: []
   projectile: {fileID: 9070903422859324947, guid: c6bee0e483aaf334b8ad530eaf2371d1, type: 3}
   tip: {fileID: 2055871732172786913}
   firingRate: 0.5

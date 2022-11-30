@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 3573170646471132519}
   - component: {fileID: 3540066714296599110}
   - component: {fileID: 3907940061405465838}
+  - component: {fileID: 1030748822463762918}
   m_Layer: 0
   m_Name: demoBadThing2
   m_TagString: Enemy
@@ -102,10 +103,10 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 0.0001
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_AngularDrag: 0
+  m_GravityScale: 0.01
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -157,7 +158,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: c581fc02c273f5b4a81188fe17cc269c, type: 3}
   powerUps:
   - {fileID: 5307111858668271570, guid: 0c2af4ea445c13d439c29c5f36513829, type: 3}
-  chance: 1
+  chance: 4
   explosionPrefab: {fileID: 5376455531186091334, guid: 99d2dd9857c98634c88e34e7b6c6fd20, type: 3}
 --- !u!95 &3540066714296599110
 Animator:
@@ -191,11 +192,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c68c97770877b5642bbe676d548b2ba3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 8705972507856053296, guid: 59ea8fe213f68304db82df40b0fc97a4, type: 3}
+  projectile: {fileID: 3169956163769476897, guid: a3bca2093cac2ea418bc63bb74e7eecd, type: 3}
   tip: {fileID: 2584615072432587786}
-  delay: 5
+  delay: 6
   rate: 4
   fuzz: 4
+--- !u!114 &1030748822463762918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3573170646471132504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1052087f7247914ba85d616e72a7d62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 3573170646471132517}
 --- !u!1 &5841236729276092177
 GameObject:
   m_ObjectHideFlags: 0

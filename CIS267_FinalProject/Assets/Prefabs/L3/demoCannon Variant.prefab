@@ -75,6 +75,34 @@ PrefabInstance:
       propertyPath: weapSound3
       value: 
       objectReference: {fileID: 8300000, guid: 67ef8afe2e86c9949b54179a277ae5cf, type: 3}
+    - target: {fileID: 4407642489124533190, guid: 89dcd6e5fb8c43847976c774727b4506, type: 3}
+      propertyPath: weapSound.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4407642489124533190, guid: 89dcd6e5fb8c43847976c774727b4506, type: 3}
+      propertyPath: weapSound.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 5ad4685a1c7bf234c898cf0e4a28e2dc, type: 3}
+    - target: {fileID: 4407642489124533190, guid: 89dcd6e5fb8c43847976c774727b4506, type: 3}
+      propertyPath: weapSound.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: ad713ddbbcf0f244d9f8112859113474, type: 3}
+    - target: {fileID: 4407642489124533190, guid: 89dcd6e5fb8c43847976c774727b4506, type: 3}
+      propertyPath: weapSound.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 67ef8afe2e86c9949b54179a277ae5cf, type: 3}
+    - target: {fileID: 4407642489124533190, guid: 89dcd6e5fb8c43847976c774727b4506, type: 3}
+      propertyPath: weapSound.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: 305b514d1e282424590a529c4109e96c, type: 3}
+    - target: {fileID: 4407642489124533190, guid: 89dcd6e5fb8c43847976c774727b4506, type: 3}
+      propertyPath: weapSound.Array.data[4]
+      value: 
+      objectReference: {fileID: 8300000, guid: 999b301d017f1d040b5b2df6b224b7fc, type: 3}
+    - target: {fileID: 4407642489124533190, guid: 89dcd6e5fb8c43847976c774727b4506, type: 3}
+      propertyPath: weapSound.Array.data[5]
+      value: 
+      objectReference: {fileID: 8300000, guid: 628f823165f7eac4eb79351b467168c5, type: 3}
     - target: {fileID: 6344368946655514067, guid: 89dcd6e5fb8c43847976c774727b4506, type: 3}
       propertyPath: m_Name
       value: demoCannon Variant
