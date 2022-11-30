@@ -26,6 +26,10 @@ public class moveProjectile : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
+            if (GameManager.instance.isMinimized())
+            {
+                projectileDamage = projectileDamage / 2;
+            }
             collision.gameObject.GetComponent<enemyInfo>().deductHealth(projectileDamage);
             destroyProjectile();
         }

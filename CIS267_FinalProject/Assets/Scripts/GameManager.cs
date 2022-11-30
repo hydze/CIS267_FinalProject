@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
     private int enemyCount;
     private bool level3_speedPowerup = false;
     private bool halfSpeedProjectiles = false;
+    private bool minimize = false;
 
     public Transform l3_target;
 
@@ -229,6 +230,21 @@ public class GameManager : MonoBehaviour
     public void stopShield()
     {
         shield = false;
+    }
+
+    public void miniSized()
+    {
+        minimize = true;
+    }
+
+    public void normalSized()
+    {
+        minimize = false;
+    }
+
+    public bool isMinimized()
+    {
+        return minimize;
     }
 
     public float getVol()

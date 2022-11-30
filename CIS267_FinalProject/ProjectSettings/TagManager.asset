@@ -17,6 +17,7 @@ TagManager:
   - L2ShieldOn
   - L2Spawns1
   - shipProjectile
+  - Mini
   layers:
   - Default
   - TransparentFX

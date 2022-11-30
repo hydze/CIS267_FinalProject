@@ -120,7 +120,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectileDamage: 1
-  projectileSpeed: 6
+  projectileSpeed: 10
   projectileTTL: 5
 --- !u!70 &5485311166820742988
 CapsuleCollider2D:
