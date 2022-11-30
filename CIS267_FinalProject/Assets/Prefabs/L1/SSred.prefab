@@ -146,5 +146,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectileDamage: 5
-  projectileSpeed: 6
+  projectileSpeed: 5
   projectileTTL: 10
