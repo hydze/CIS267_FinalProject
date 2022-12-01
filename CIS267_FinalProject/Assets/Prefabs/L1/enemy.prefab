@@ -210,8 +210,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   frequency: 0.5
-  offset: 0
-  magnitude: 0.5
+  offset: 1
+  magnitude: 0.2
 --- !u!1 &8862962460786118968
 GameObject:
   m_ObjectHideFlags: 0
