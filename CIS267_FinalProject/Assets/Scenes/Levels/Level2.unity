@@ -1403,6 +1403,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 897185c36aa374f4c94e91d22c164587, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playBtn: {fileID: 0}
+  cheatsBtn: {fileID: 0}
+  rankingsBtn: {fileID: 0}
+  settingsBtn: {fileID: 0}
+  quitBtn: {fileID: 0}
+  world1Btn: {fileID: 0}
+  world2Btn: {fileID: 0}
+  world3Btn: {fileID: 0}
+  cheatsBackBtn: {fileID: 0}
+  resetBtn: {fileID: 0}
+  rankingsBackBtn: {fileID: 0}
+  settingsBackBtn: {fileID: 0}
 --- !u!114 &379771127
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7690,7 +7702,7 @@ RectTransform:
   m_GameObject: {fileID: 807752148}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 20}
-  m_LocalScale: {x: 1.4582621, y: 1.4582621, z: 1.4582621}
+  m_LocalScale: {x: 3.0893285, y: 3.0893285, z: 3.0893285}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 26510707}
@@ -7698,7 +7710,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -325, y: 6}
+  m_AnchoredPosition: {x: -328, y: -67}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &807752150
@@ -7721,7 +7733,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 69c324c6139d4b74b82cb0fc0fd4e31e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 01d482fa719549f469d20a963d4091fc, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8421,7 +8433,7 @@ RectTransform:
   m_GameObject: {fileID: 1120173342}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 20}
-  m_LocalScale: {x: 2.15, y: 2.15, z: 2.15}
+  m_LocalScale: {x: 2.6337502, y: 2.6337502, z: 2.6337502}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 26510707}
@@ -8452,7 +8464,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3c876bd7846bb6f4b94db9e31b725e1a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a8978945c5710024484276a450d17436, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -15058,6 +15070,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 897185c36aa374f4c94e91d22c164587, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playBtn: {fileID: 0}
+  cheatsBtn: {fileID: 0}
+  rankingsBtn: {fileID: 0}
+  settingsBtn: {fileID: 0}
+  quitBtn: {fileID: 0}
+  world1Btn: {fileID: 0}
+  world2Btn: {fileID: 0}
+  world3Btn: {fileID: 0}
+  cheatsBackBtn: {fileID: 0}
+  resetBtn: {fileID: 0}
+  rankingsBackBtn: {fileID: 0}
+  settingsBackBtn: {fileID: 0}
 --- !u!114 &1606674615
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15769,6 +15793,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 897185c36aa374f4c94e91d22c164587, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playBtn: {fileID: 0}
+  cheatsBtn: {fileID: 0}
+  rankingsBtn: {fileID: 0}
+  settingsBtn: {fileID: 0}
+  quitBtn: {fileID: 0}
+  world1Btn: {fileID: 0}
+  world2Btn: {fileID: 0}
+  world3Btn: {fileID: 0}
+  cheatsBackBtn: {fileID: 0}
+  resetBtn: {fileID: 0}
+  rankingsBackBtn: {fileID: 0}
+  settingsBackBtn: {fileID: 0}
 --- !u!114 &1885136094
 MonoBehaviour:
   m_ObjectHideFlags: 0
