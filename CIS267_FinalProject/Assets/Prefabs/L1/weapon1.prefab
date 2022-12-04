@@ -100,6 +100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weapSound:
   - {fileID: 0}
+  clip: {fileID: 8300000, guid: ba2d5da21e0aed144a99934d56c56296, type: 3}
   projectile: {fileID: 6418616072885710668, guid: 8979130b4d4e0da43bff357edf34a02d, type: 3}
   tip: {fileID: 7277518647873350804}
   firingRate: 0.5

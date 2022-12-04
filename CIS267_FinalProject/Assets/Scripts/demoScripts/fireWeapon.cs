@@ -10,6 +10,8 @@ public class fireWeapon : MonoBehaviour
 
     public AudioClip[] weapSound;
 
+    public AudioClip clip;
+
     public GameObject projectile;
 
     public Transform tip;
@@ -60,11 +62,18 @@ public class fireWeapon : MonoBehaviour
                             theShip.PlayOneShot(weapSound[randObj]);
                         }                      
                     }
+                    else if (SceneManager.GetActiveScene().name == "Level1")
+                    {
+                        theShip.PlayOneShot(clip);
+                    }
+                    else if (SceneManager.GetActiveScene().name == "Level2")
+                    {
+                        theShip.PlayOneShot(clip);
+                    }
                 }
             }
             canFire = false;
         }
-
     }
 
     void shootWeapon()

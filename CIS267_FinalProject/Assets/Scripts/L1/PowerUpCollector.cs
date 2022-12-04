@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class PowerUpCollector : MonoBehaviour
 {
+    private AudioSource theShip;
+    public AudioClip clip;
     private float time;
     public float powerUpTimer;
     // Start is called before the first frame update
     void Start()
     {
-        
+        theShip = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -44,6 +46,7 @@ public class PowerUpCollector : MonoBehaviour
         //ship mini sized
         if (collision.gameObject.CompareTag("Mini"))
         {
+            theShip.PlayOneShot(clip);
             Destroy(collision.gameObject);
         }
 
@@ -51,7 +54,17 @@ public class PowerUpCollector : MonoBehaviour
         if (collision.gameObject.CompareTag("Attack"))
         {
             GameManager.instance.attackIncrease();
+            theShip.PlayOneShot(clip);
             Destroy(collision.gameObject);
+        }
+
+        if (collision.gameObject.CompareTag("weap1"))
+        {
+            theShip.PlayOneShot(clip);
+        }
+        if (collision.gameObject.CompareTag("weap2"))
+        {
+            theShip.PlayOneShot(clip);
         }
     }
 }
