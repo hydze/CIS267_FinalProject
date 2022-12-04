@@ -103,7 +103,7 @@ MonoBehaviour:
   clip: {fileID: 8300000, guid: ba2d5da21e0aed144a99934d56c56296, type: 3}
   projectile: {fileID: 3201834124049431783, guid: f1588029d49cdbb45b3bdc64ffd22e3a, type: 3}
   tip: {fileID: 2300632009945813140}
-  firingRate: 0.1
+  firingRate: 0.2
   canFire: 1
 --- !u!1 &7890308761489336865
 GameObject:

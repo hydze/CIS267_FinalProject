@@ -18,7 +18,14 @@ public class menuButtons : MonoBehaviour
     public Button cheatsBackBtn;
     public Button resetBtn;
     public Button rankingsBackBtn;
+    public Button settingsSoundBtn;
+    public Button settingsControlsBtn;
     public Button settingsBackBtn;
+    public Button soundBackBtn;
+    public Button controlsBackBtn;
+    public Button gmMainMenuBtn;
+    public Button gmRankingsBtn;
+    public Button gmQuitBtn;
     private void Start()
     {
         Scene scene = SceneManager.GetActiveScene();

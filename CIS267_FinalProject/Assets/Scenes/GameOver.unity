@@ -308,7 +308,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 0}
+  m_FirstSelected: {fileID: 1620554008}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
 --- !u!4 &361739631
@@ -472,6 +472,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 897185c36aa374f4c94e91d22c164587, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playBtn: {fileID: 0}
+  cheatsBtn: {fileID: 0}
+  rankingsBtn: {fileID: 0}
+  settingsBtn: {fileID: 0}
+  quitBtn: {fileID: 0}
+  world1Btn: {fileID: 0}
+  world2Btn: {fileID: 0}
+  world3Btn: {fileID: 0}
+  cheatsBackBtn: {fileID: 0}
+  resetBtn: {fileID: 0}
+  rankingsBackBtn: {fileID: 0}
+  settingsBackBtn: {fileID: 0}
+  gmMainMenuBtn: {fileID: 0}
+  gmRankingsBtn: {fileID: 0}
+  gmQuitBtn: {fileID: 0}
 --- !u!1 &472230370
 GameObject:
   m_ObjectHideFlags: 0
@@ -618,6 +633,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 897185c36aa374f4c94e91d22c164587, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playBtn: {fileID: 0}
+  cheatsBtn: {fileID: 0}
+  rankingsBtn: {fileID: 0}
+  settingsBtn: {fileID: 0}
+  quitBtn: {fileID: 0}
+  world1Btn: {fileID: 0}
+  world2Btn: {fileID: 0}
+  world3Btn: {fileID: 0}
+  cheatsBackBtn: {fileID: 0}
+  resetBtn: {fileID: 0}
+  rankingsBackBtn: {fileID: 0}
+  settingsBackBtn: {fileID: 0}
+  gmMainMenuBtn: {fileID: 0}
+  gmRankingsBtn: {fileID: 0}
+  gmQuitBtn: {fileID: 0}
 --- !u!1 &767726508
 GameObject:
   m_ObjectHideFlags: 0
@@ -1207,6 +1237,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 897185c36aa374f4c94e91d22c164587, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playBtn: {fileID: 0}
+  cheatsBtn: {fileID: 0}
+  rankingsBtn: {fileID: 0}
+  settingsBtn: {fileID: 0}
+  quitBtn: {fileID: 0}
+  world1Btn: {fileID: 0}
+  world2Btn: {fileID: 0}
+  world3Btn: {fileID: 0}
+  cheatsBackBtn: {fileID: 0}
+  resetBtn: {fileID: 0}
+  rankingsBackBtn: {fileID: 0}
+  settingsBackBtn: {fileID: 0}
+  gmMainMenuBtn: {fileID: 0}
+  gmRankingsBtn: {fileID: 0}
+  gmQuitBtn: {fileID: 0}
 --- !u!1 &1029394354
 GameObject:
   m_ObjectHideFlags: 0
@@ -1964,6 +2009,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 897185c36aa374f4c94e91d22c164587, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playBtn: {fileID: 0}
+  cheatsBtn: {fileID: 0}
+  rankingsBtn: {fileID: 0}
+  settingsBtn: {fileID: 0}
+  quitBtn: {fileID: 0}
+  world1Btn: {fileID: 0}
+  world2Btn: {fileID: 0}
+  world3Btn: {fileID: 0}
+  cheatsBackBtn: {fileID: 0}
+  resetBtn: {fileID: 0}
+  rankingsBackBtn: {fileID: 0}
+  settingsBackBtn: {fileID: 0}
+  gmMainMenuBtn: {fileID: 1620554010}
+  gmRankingsBtn: {fileID: 472230373}
+  gmQuitBtn: {fileID: 428145463}
 --- !u!114 &1620554010
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2332,6 +2392,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 897185c36aa374f4c94e91d22c164587, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playBtn: {fileID: 0}
+  cheatsBtn: {fileID: 0}
+  rankingsBtn: {fileID: 0}
+  settingsBtn: {fileID: 0}
+  quitBtn: {fileID: 0}
+  world1Btn: {fileID: 0}
+  world2Btn: {fileID: 0}
+  world3Btn: {fileID: 0}
+  cheatsBackBtn: {fileID: 0}
+  resetBtn: {fileID: 0}
+  rankingsBackBtn: {fileID: 0}
+  settingsBackBtn: {fileID: 0}
+  gmMainMenuBtn: {fileID: 0}
+  gmRankingsBtn: {fileID: 0}
+  gmQuitBtn: {fileID: 0}
 --- !u!1 &1721554988
 GameObject:
   m_ObjectHideFlags: 0
@@ -2598,6 +2673,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 897185c36aa374f4c94e91d22c164587, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playBtn: {fileID: 0}
+  cheatsBtn: {fileID: 0}
+  rankingsBtn: {fileID: 0}
+  settingsBtn: {fileID: 0}
+  quitBtn: {fileID: 0}
+  world1Btn: {fileID: 0}
+  world2Btn: {fileID: 0}
+  world3Btn: {fileID: 0}
+  cheatsBackBtn: {fileID: 0}
+  resetBtn: {fileID: 0}
+  rankingsBackBtn: {fileID: 0}
+  settingsBackBtn: {fileID: 0}
+  gmMainMenuBtn: {fileID: 0}
+  gmRankingsBtn: {fileID: 0}
+  gmQuitBtn: {fileID: 0}
 --- !u!114 &1873395462
 MonoBehaviour:
   m_ObjectHideFlags: 0
