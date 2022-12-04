@@ -2,9 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class menuButtons : MonoBehaviour
 {
+    public Button playBtn;
+    public Button cheatsBtn;
+    public Button rankingsBtn;
+    public Button settingsBtn;
+    public Button quitBtn;
+    public Button world1Btn;
+    public Button world2Btn;
+    public Button world3Btn;
+    public Button cheatsBackBtn;
+    public Button resetBtn;
+    public Button rankingsBackBtn;
+    public Button settingsBackBtn;
     private void Start()
     {
         Scene scene = SceneManager.GetActiveScene();
@@ -13,7 +27,9 @@ public class menuButtons : MonoBehaviour
         {
             Time.timeScale = 1f;
         }
-        
+
+        //playBtn.Select();
+
     }
 
     public void startGame()
@@ -70,8 +86,6 @@ public class menuButtons : MonoBehaviour
     {
         SceneManager.LoadScene("Level3");
     }
-
-
 
     public void exitGame()
     {

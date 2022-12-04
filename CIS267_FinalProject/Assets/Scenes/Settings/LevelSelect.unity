@@ -390,6 +390,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 897185c36aa374f4c94e91d22c164587, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playBtn: {fileID: 0}
+  cheatsBtn: {fileID: 0}
+  rankingsBtn: {fileID: 0}
+  settingsBtn: {fileID: 0}
+  quitBtn: {fileID: 0}
+  world1Btn: {fileID: 1929310916}
+  world2Btn: {fileID: 2006348595}
+  world3Btn: {fileID: 1072000573}
+  cheatsBackBtn: {fileID: 123495127}
 --- !u!4 &795224157
 Transform:
   m_ObjectHideFlags: 0
@@ -551,6 +560,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 897185c36aa374f4c94e91d22c164587, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playBtn: {fileID: 0}
+  cheatsBtn: {fileID: 0}
+  rankingsBtn: {fileID: 0}
+  settingsBtn: {fileID: 0}
+  quitBtn: {fileID: 0}
+  world1Btn: {fileID: 0}
+  world2Btn: {fileID: 0}
+  world3Btn: {fileID: 0}
+  cheatsBackBtn: {fileID: 0}
 --- !u!1 &1189392239
 GameObject:
   m_ObjectHideFlags: 0
@@ -706,7 +724,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 0}
+  m_FirstSelected: {fileID: 1929310914}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
 --- !u!4 &1317261182
@@ -1110,6 +1128,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 897185c36aa374f4c94e91d22c164587, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playBtn: {fileID: 0}
+  cheatsBtn: {fileID: 0}
+  rankingsBtn: {fileID: 0}
+  settingsBtn: {fileID: 0}
+  quitBtn: {fileID: 0}
+  world1Btn: {fileID: 0}
+  world2Btn: {fileID: 0}
+  world3Btn: {fileID: 0}
+  cheatsBackBtn: {fileID: 0}
 --- !u!1 &2006348593
 GameObject:
   m_ObjectHideFlags: 0
@@ -1256,3 +1283,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 897185c36aa374f4c94e91d22c164587, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playBtn: {fileID: 0}
+  cheatsBtn: {fileID: 0}
+  rankingsBtn: {fileID: 0}
+  settingsBtn: {fileID: 0}
+  quitBtn: {fileID: 0}
+  world1Btn: {fileID: 0}
+  world2Btn: {fileID: 0}
+  world3Btn: {fileID: 0}
+  cheatsBackBtn: {fileID: 0}

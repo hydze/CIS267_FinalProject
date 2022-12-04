@@ -689,6 +689,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 897185c36aa374f4c94e91d22c164587, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playBtn: {fileID: 1598108842}
+  cheatsBtn: {fileID: 105588711}
+  rankingsBtn: {fileID: 1663095845}
+  settingsBtn: {fileID: 1023039796}
+  quitBtn: {fileID: 180126114}
 --- !u!4 &508152556
 Transform:
   m_ObjectHideFlags: 0
@@ -965,7 +970,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 0}
+  m_FirstSelected: {fileID: 1598108840}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
 --- !u!4 &833599498
