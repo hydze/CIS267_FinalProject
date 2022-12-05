@@ -133,7 +133,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  clip: {fileID: 8300000, guid: dd2741ab413a615428f0fc2c7b6b396e, type: 3}
+  clip: {fileID: 8300000, guid: 55b1e4aa4bfec8146badf89b19c41c0c, type: 3}
   projectile: {fileID: 1629854669086543743, guid: 5469b0e13e64ead40984df0365357306, type: 3}
   tip: {fileID: 2055871732172786913}
   firingRate: 0
