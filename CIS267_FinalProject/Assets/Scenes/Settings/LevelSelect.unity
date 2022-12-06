@@ -399,6 +399,16 @@ MonoBehaviour:
   world2Btn: {fileID: 2006348595}
   world3Btn: {fileID: 1072000573}
   cheatsBackBtn: {fileID: 123495127}
+  resetBtn: {fileID: 0}
+  rankingsBackBtn: {fileID: 0}
+  settingsSoundBtn: {fileID: 0}
+  settingsControlsBtn: {fileID: 0}
+  settingsBackBtn: {fileID: 0}
+  soundBackBtn: {fileID: 0}
+  controlsBackBtn: {fileID: 0}
+  gmMainMenuBtn: {fileID: 0}
+  gmRankingsBtn: {fileID: 0}
+  gmQuitBtn: {fileID: 0}
 --- !u!4 &795224157
 Transform:
   m_ObjectHideFlags: 0
@@ -569,6 +579,16 @@ MonoBehaviour:
   world2Btn: {fileID: 0}
   world3Btn: {fileID: 0}
   cheatsBackBtn: {fileID: 0}
+  resetBtn: {fileID: 0}
+  rankingsBackBtn: {fileID: 0}
+  settingsSoundBtn: {fileID: 0}
+  settingsControlsBtn: {fileID: 0}
+  settingsBackBtn: {fileID: 0}
+  soundBackBtn: {fileID: 0}
+  controlsBackBtn: {fileID: 0}
+  gmMainMenuBtn: {fileID: 0}
+  gmRankingsBtn: {fileID: 0}
+  gmQuitBtn: {fileID: 0}
 --- !u!1 &1189392239
 GameObject:
   m_ObjectHideFlags: 0
@@ -1137,6 +1157,16 @@ MonoBehaviour:
   world2Btn: {fileID: 0}
   world3Btn: {fileID: 0}
   cheatsBackBtn: {fileID: 0}
+  resetBtn: {fileID: 0}
+  rankingsBackBtn: {fileID: 0}
+  settingsSoundBtn: {fileID: 0}
+  settingsControlsBtn: {fileID: 0}
+  settingsBackBtn: {fileID: 0}
+  soundBackBtn: {fileID: 0}
+  controlsBackBtn: {fileID: 0}
+  gmMainMenuBtn: {fileID: 0}
+  gmRankingsBtn: {fileID: 0}
+  gmQuitBtn: {fileID: 0}
 --- !u!1 &2006348593
 GameObject:
   m_ObjectHideFlags: 0
@@ -1292,3 +1322,13 @@ MonoBehaviour:
   world2Btn: {fileID: 0}
   world3Btn: {fileID: 0}
   cheatsBackBtn: {fileID: 0}
+  resetBtn: {fileID: 0}
+  rankingsBackBtn: {fileID: 0}
+  settingsSoundBtn: {fileID: 0}
+  settingsControlsBtn: {fileID: 0}
+  settingsBackBtn: {fileID: 0}
+  soundBackBtn: {fileID: 0}
+  controlsBackBtn: {fileID: 0}
+  gmMainMenuBtn: {fileID: 0}
+  gmRankingsBtn: {fileID: 0}
+  gmQuitBtn: {fileID: 0}

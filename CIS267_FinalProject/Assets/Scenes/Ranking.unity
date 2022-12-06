@@ -1979,7 +1979,14 @@ MonoBehaviour:
   cheatsBackBtn: {fileID: 0}
   resetBtn: {fileID: 448145679}
   rankingsBackBtn: {fileID: 2010554949}
+  settingsSoundBtn: {fileID: 0}
+  settingsControlsBtn: {fileID: 0}
   settingsBackBtn: {fileID: 0}
+  soundBackBtn: {fileID: 0}
+  controlsBackBtn: {fileID: 0}
+  gmMainMenuBtn: {fileID: 0}
+  gmRankingsBtn: {fileID: 0}
+  gmQuitBtn: {fileID: 0}
 --- !u!114 &2010554949
 MonoBehaviour:
   m_ObjectHideFlags: 0
